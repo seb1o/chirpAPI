@@ -11,11 +11,13 @@ public partial class Chirp
 
     public string? ExtUrl { get; set; }
 
-    public DateTime CreationTime { get; set; }
+
 
     public double? Lat { get; set; }
 
     public double? Lng { get; set; }
+
+    public DateTime CreationTime { get; set; }
 
     public virtual ICollection<Comment> Comments { get; set; } = new List<Comment>();
 }
